@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Dear Kanaluuuuu ❤️</title>
+
+<style>
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(135deg,#fbc2eb,#a6c1ee);
+    overflow-x:hidden;
+    color:#4a3f55;
+    text-align:center;
+}
+
+/* Floating Hearts */
+.heart{
+    position:fixed;
+    bottom:-20px;
+    color:#ff6b81;
+    animation:floatUp linear infinite;
+    opacity:0.7;
+}
+
+@keyframes floatUp{
+    to{
+        transform:translateY(-110vh);
+        opacity:0;
+    }
+}
+
+/* Section */
+.section{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* Headings */
+h1{
+    font-size:42px;
+    color:#ff4e88;
+    animation:fadeIn 2s ease-in;
+}
+
+p{
+    font-size:22px;
+    max-width:700px;
+    line-height:1.7;
+}
+
+/* Button */
+.btn{
+    margin-top:30px;
+    padding:14px 30px;
+    background:linear-gradient(45deg,#ff9a9e,#fecfef);
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.4s;
+    border:none;
+    cursor:pointer;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* Image */
+img{
+    width:320px;
+    max-width:90%;
+    border-radius:20px;
+    margin:20px 0;
+    box-shadow:0 0 30px rgba(255,105,180,0.5);
+}
+
+/* Telugu Line */
+.telugu{
+    font-size:26px;
+    color:#c44569;
+}
+
+/* Surprise */
+#surprise{
+    display:none;
+    font-size:28px;
+    margin-top:20px;
+    color:#ff4e88;
+    animation:fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="section">
+
+<h1>🌙 Happy Shivaratri  
+<br>my dear kanaluuuuu ❤️</h1>
+
+<p>
+On this beautiful night,  
+I feel lucky to have you in my life 🥹💖
+</p>
+
+<p>
+You are my calm, my comfort,  
+my sweetest blessing.
+</p>
+
+<a href="#page2" class="btn">Tap to Feel My Love 💞</a>
+
+</div>
+
+<!-- PAGE 2 -->
+<div class="section" id="page2">
+
+<h1>✨ Our Divine Connection ✨</h1>
+
+<img src="https://i.pinimg.com/736x/8e/ca/ec/8ecaec46c58a70d01654f7d76c570601.jpg" alt="Shiva Parvati">
+
+<p>
+Like Shiva and Parvati,  
+may we always stay together with trust and love.
+</p>
+
+<p class="telugu">
+శివుడికి తోడుగా పార్వతీ రాకపోతే ఇంకా ఎవరు వస్తారు 🥹🫴🏻🫶🏻
+</p>
+
+<p>
+In every lifetime,  
+I would still choose you ❤️
+</p>
+
+<button class="btn" onclick="showLove()">Special Surprise 💌</button>
+
+<div id="surprise">
+I Love You Kanaluuuuu…  
+Today, Tomorrow & Forever 💖✨
+</div>
+
+</div>
+
+<script>
+
+/* Floating Hearts Generator */
+for(let i=0;i<25;i++){
+    let heart=document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML="💗";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.animationDuration=(6+Math.random()*5)+"s";
+    heart.style.fontSize=(15+Math.random()*25)+"px";
+    document.body.appendChild(heart);
+}
+
+/* Surprise */
+function showLove(){
+    document.getElementById("surprise").style.display="block";
+}
+
+</script>
+
+</body>
+</html>
